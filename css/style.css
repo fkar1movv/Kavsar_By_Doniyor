@@ -1,6 +1,17 @@
 body{
     margin: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cover{
+    background-color: white;
+    width: 450px;
+    padding: 20px;
+    margin: 50px 0;
 }
 a{
     text-decoration: none;
@@ -13,7 +24,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 #menu a{
     width: 150px;
@@ -28,3 +39,75 @@ a{
     color: white;
     background-color: rgb(38, 129, 219);
 }
+#contact{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact div{
+    width: 170px;
+    height: 45px;
+    line-height: 45px;
+    margin: 5px;
+    border-radius: 5px;
+}
+#contact div img{
+    width: 25px;
+}
+#contact div p{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+#telegram{
+    border: 1px solid rgb(38, 129, 219);
+}
+#telegram:hover{
+    background-color: rgb(38, 129, 219);
+}
+#telegram:hover a{
+    color: white;
+}
+#instagram{
+    border: 1px solid rgb(230, 37, 165);
+}
+#instagram a{
+    color: rgb(230, 37, 165);
+}
+#instagram:hover{
+    background-color: rgb(230, 37, 165);
+}
+#instagram:hover a{
+    color: white;
+}
+#location{
+    border: 1px solid rgb(35, 216, 35);
+}
+#location a{
+    color: rgb(35, 216, 35);
+}
+#location:hover{
+    background-color: rgb(35, 216, 35);
+}
+#location:hover a{
+    color: white;
+}
+#phone{
+    border: 1px solid rgb(35, 216, 35);
+}
+/* #phone p{
+    color: rgb(35, 216, 35);
+} */
+#phone:hover{
+    background-color: rgb(35, 216, 35);
+}
+#phone:hover p{
+    color: white;
+}
+
+@media only screen and (max-width: 400px) {
+    #cover{
+      width: 240px;
+    }
+  }
